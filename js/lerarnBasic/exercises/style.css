@@ -1,0 +1,21 @@
+.red {
+    background-color: red;
+
+}
+.blue {
+    background-color: blue;
+}
+.bold{
+    font-weight: bolder;
+}
+
+.a {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+}
+.b {
+    width: 150px;
+    height: 150px;
+    background-color:blue;
+}

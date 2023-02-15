@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <title>Title</title> -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=3">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="关于熊猫的调查问卷">
+    <meta name="author" content="bingbig">
+    <title>熊猫问卷</title>
+    <base target="_blank">
+    <!-- page icon -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="shortcut icon" href="./imags/wedding.png">
+    <link rel="bookmark" href="./imags/french.png">
+</head>
+<body>
+    <h1>婷婷😄&#x261D;&#x270C;林林</h1>
+    <!-- 这是熊猫文件调查 -->
+    <form action="" method="get">
+        <input type="file"><br>
+        <label for="name">姓名：</label>
+        <input id="name" type="text" name="INputName" value="" placeholder="请输入姓名">
+        <br>
+        <br>
+        <label for="avatar">头像:</label>
+        <img src="./imags/WechatIMG2519.jpeg" name="avatar" id="avatar" width="300" height="200">
+        <br>
+        <label for="gender">性别:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">男性</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">女性</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">其他</label>
+        <br>
+        <label>爱好:</label>
+        <!-- select 和 option使用 -->
+        <select name="hobby" id="hobby" required>
+            <option value=""></option>
+            <option value="baskball">篮球</option>
+            <option value="sockerball">足球</option>
+            <option value="pullball">排球</option>
+        </select>
+        <br>
+        <label for="aria">国家：</label>
+        <!-- datalist 使用例子 -->
+        <input type="text" list="ariaList" name="aria" id="aria">
+        <datalist id="ariaList">
+            <option value="北京市">北京市</option>
+            <option value="太原市">太原市</option>
+            <option value="南京市">南京市</option>
+            <option value="大同市">大同市</option>
+            <option value="临汾市">临汾市</option>
+        </datalist>
+        <hr>
+        <label for="suggestion" id="suggest">建议:</label>
+        <br>
+        <!-- textaria 使用例子 -->
+        <textarea name="suggestion" id="suggestion" cols="30" rows="10" placeholder="感谢提供建议"></textarea>
+        <br>
+        <label for="name">电话：</label>
+        <input id="tele" type="text" name="TelePhone" value="" placeholder="请输电话"><br>
+        <label for="name">密码：</label>
+        <input id="password" type="password" name="Password" value="123456" minlength="8" maxlength="12"><br>
+        <label for="email">邮箱：</label>
+        <input id="email" type="email" name="email" required><br>
+        <label for="age">年龄：</label>
+        <input id="age" 
+        type="number" 
+        name="age"
+        value="18"
+        min="0"
+        max="150"
+        required
+        >
+        <br>
+        <input type="checkbox" id="checkbox" name="news" value="newspaper">
+        <label for="checkbox">订阅熊猫电子报</label><br>
+        <!-- 0<input type="range" min="0" max="100" name="" value="" step="10">100 -->
+
+        <button type="submit">提交表单</button>
+    </form>
+</body>
+</html>

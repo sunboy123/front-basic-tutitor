@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Serif SC', serif;
+
+}
+
+body{
+    position: relative;
+}
+.orange{
+    position:absolute;
+    top: -10px;
+    right: 0;
+    z-index: -1;
+    width:55vw;
+    height: 150vh;
+}
+
+header{
+    nav {
+        width: 100%;
+        
+        ul{
+            padding: 2rem;
+            width: 70%;
+            display: flex;
+            list-style-type: none;
+            justify-content: space-around;
+            li{
+                font-size: 1.75rem;
+                a{
+                    color: black;
+                    text-decoration: none;
+
+                }
+            }
+        }
+    }
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    section.left{
+        flex: 3 1 500px;
+        padding:2rem;
+        h1{
+            font-size: 4rem;
+            color: #E65100;
+        }
+        p{
+            font-size:2rem;
+            padding: 1rem 0rem;
+        }
+    }
+    section.right{
+        flex: 1 1 600px;
+        position:relative;
+        margin: 1rem;
+        img{
+            border-radius: 50%;
+            width: 20vw;
+            height: 20vw;
+            position:absolute;
+            top:45vh;
+            right:25vw;
+            transform: translateY(-50);
+        }
+
+    }
+}
+
+footer{
+    a {
+        padding: 0.5rem;
+    }
+}
+
+.active{
+    color: #E65100;
+}
+
+@media screen and (max-width:1100px){
+    header{
+        nav{
+            ul{
+                width: 100%;
+                flex-direction: column;
+                li{
+                    padding: 1rem 0rem;
+                    border-bottom: 2px solid gray;
+                }
+            }
+        }
+    }
+    main{
+        section.right{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                position: static;
+                transform: none;
+                width: 50vw;
+                height: 50vw;
+            }
+        }
+    }
+    
+}

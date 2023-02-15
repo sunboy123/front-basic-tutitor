@@ -1,0 +1,44 @@
+<!-- HTML -->
+<form id="test-form">
+    <input type="text" name="test">
+    <button type="button" onclick="doSubmitForm()">Submit</button>
+</form>
+<script>
+    function doSubmitForm() {
+        var form = document.getElementById('test-form');
+        // 可以在此修改form的input...
+        // 提交form:
+        form.submit();
+    }
+</script>
+
+<form id="test-form1" onsubmit="return checkForm()">
+    <input type="text" name="test">
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+    function checkForm() {
+        var form = document.getElementById('test-form1');
+        // 可以在此修改form的input...
+        // 继续下一步:
+        return true;
+    }
+</script>
+
+<form id="login-form" method="post" onsubmit="return checkForm()">
+    <input type="text" id="username" name="username">
+    <input type="password" id="password" name="password">
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+    function checkForm() {
+        var pwd = document.getElementById('password');
+        // 把用户输入的明文变为MD5:
+        pwd.value = toMD5(pwd.value);
+        console.log(pwd)
+        // 继续下一步:
+        return true;
+    }
+</script>

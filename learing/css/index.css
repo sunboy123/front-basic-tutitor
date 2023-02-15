@@ -1,0 +1,191 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    font-family: 'myFont',sans-serif;
+}
+
+@font-face {
+    font-family: "myFont" ;
+    src: url(../../resources/JasonHandwriting/JasonHandwriting1.ttf);
+}
+
+body{
+    /* color:beige; */
+    background-image: url("../imags/pic.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+/* 设置选择背景 */
+*::selection{
+    background-color: aqua;
+}
+
+/*  
+h1{
+    color:green;
+}
+p {
+    color:red;
+}
+li{
+    color:blue
+}
+h2{
+    color:bisque;
+}
+label{
+    color:darkturquoise;
+    color:rgb(255,24,235,0.9);
+    color:#62e9c1;
+} 
+*/
+
+/* universal selector 设置全局通用的 */
+/* *{
+    color:red;
+} */
+
+/* element selector */
+h1, h2, h3{
+    color:rgb(234, 0, 245);
+    background-color:blanchedalmond;
+    opacity:0.6;
+    cursor:crosshair;
+    transition:all 0.5s ease;
+    
+}
+h1:hover,h2:hover,h3:hover{
+    background-color:cyan;
+    color:white;
+}
+
+ /* id selector */
+ #suggest{
+     color:seagreen;
+
+ }
+/* class selector */
+.buleText{
+    color:blue;
+}
+.largeText{
+    font-size: 4rem;
+}
+/* 特定标签的class */
+h1.buleText{
+    color:sienna;
+}
+/* descandant selector */
+div.link1 a{
+    color:yellow;
+}
+div.link2 a{
+    color:#7fffd4;
+}
+/* attribute selector */
+input[type="text"]{
+    color:aqua;
+}
+textarea:hover{
+    background-color: crimson;
+}
+tr:nth-child(1){
+    color:pink;
+}
+tr:nth-child(2){
+    color:rebeccapurple;
+}
+/* Pseudo elements */
+/* p:before{
+    content:">>";
+    color:red;
+} */
+/* p::first-letter{
+    font-size: 2.5rem;
+} */
+p {
+    font-size:1.5rem;
+    text-decoration: underline;
+    /* font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-family: 'Ma Shan Zheng', cursive;
+    text-indent: 32px; 
+}
+h1::after{
+    content:"⇓";
+    color:red;
+
+}
+li {
+    font-size: 2rem;
+    text-decoration:underline;
+}
+a.survery {
+    background-color: rgb(126, 165, 236);
+    color:aliceblue;
+    text-decoration: none;
+    /* padding:0.75rem 1rem; */
+    /* width:20vw;
+    height:50px;
+    display:block; */
+    margin:150px 30px;
+    
+}
+.survery:hover{
+    background-color:darkblue;
+
+}
+div.box1{
+    width:1000px;
+    height:600px;
+    background-color:black;
+}
+div.box2{
+    width:50%;
+    height:50%;
+    background-color: azure;
+}
+ul{
+    list-style-type:lower-alpha;
+}
+ol{
+    list-style-type:georgian;
+}
+/* table styling */
+/* 写样式表 */
+/* table{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+td{
+    padding: 0.25rem;
+    border: 1px solid rgb(0, 0, 0);
+    color:brown;
+} */
+
+table{
+    width:500px;
+    height:300px;
+}
+table:hover{
+    background-color:rgb(117, 80, 54);
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th,td {
+    padding: 0.5rem 0.75rem;
+}
+
+th{
+    background-color: rgb(121, 223, 20);
+    color: white;
+    font-size:1.5rem;
+
+}

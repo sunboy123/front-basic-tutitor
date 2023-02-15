@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    /* 首先设定去掉系统自带的padding 8px 的距离 */
+    padding:0; 
+    box-sizing: border-box;
+}
+
+nav {
+    background-color:black ;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+
+}
+
+
+/* 使用在标签中内嵌或者使用flex来实现移动上去整个区域都可以被点击的状态 */
+
+nav ul li{
+    /* padding: 0.5rem 0.75rem; */
+    display: flex;
+}
+
+nav ul li a {
+    padding: 0.5rem 0.75rem;
+    color:white;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+nav ul li a:hover{
+    background-color: yellow;
+}
+
+
+h1{
+    background-color: aqua;
+}
+
+@media screen and (max-width:800px) {
+    h1{
+        background-color: orange;
+    }
+}

@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: normal;
+}
+
+.headerText{
+    font-size: 1rem;
+}
+
+.headerTitle{
+    font-size: 2.5rem;
+}
+.tips{
+    font-size: 1.5rem;
+}
+
+header{
+    background-color:#C4C4C4;
+    width:100%;
+    /* 1rem = 16px; */
+    padding:1rem; 
+    
+}
+
+nav{
+    background-color: #1A1414;
+}
+nav ul{
+    display:flex;
+    list-style:none;
+    padding-left: 1rem;
+
+}
+
+nav ul li{
+    padding:0.5rem;
+}
+
+nav ul li a{
+    color:rgb(196, 182, 182);
+    text-decoration:none;
+    font-size: 1.25rem;
+    transition: all 0.25 ease;
+}
+
+nav ul li a:hover{
+    color:white;
+}
+
+main {
+    width:100%;
+    display: flex;
+    /* 当空间不够的时候自动向下排列 */
+    flex-wrap: wrap; 
+}
+section.left, 
+section.right {
+    padding: 1.5rem;
+}
+
+section.right h4{
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+section.left {
+    flex: 4 1 500px;
+}
+
+section.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 250px;
+
+}
+
+section.right p{
+    margin: 1rem  0.5rem;
+}
+
+.active {
+    color:white;
+}
+
+#curve_chart {
+    width: 100%;
+    height: 80%;
+}
+
+@media screen and (max-width: 650px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #curve_chart {
+        width: 100%;
+        height: 40%;
+    }
+
+    
+}

@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// header h1{
+//     color:chocolate;
+// }
+$themeColor:rgb(80, 187, 80);
+$anotherColor:rgb(2, 49, 16);
+
+@import "./header";
+
+@mixin flexbox ($direction){
+    display: flex;
+    flex-direction: $direction;
+}
+
+div.links{
+    @include flexbox(column);
+}
+
+.pic {
+    width: 200px;
+    height: 400px;
+    object-fit: cover;
+}

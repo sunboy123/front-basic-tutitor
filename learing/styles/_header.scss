@@ -1,0 +1,11 @@
+
+header {
+    background-color: cornflowerblue;
+    h1{
+        // color: chocolate;
+        color: $themeColor;
+    }
+    &:hover{
+        background-color:$anotherColor;
+    }
+}
